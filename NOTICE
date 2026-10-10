@@ -1,0 +1,20 @@
+PetLink
+Copyright 2026 fantasyce and PetLink contributors
+
+PetLink's original code is licensed under the Apache License, Version 2.0.
+See LICENSE. Third-party components retain their own licenses.
+This license does not grant rights to use PetLink trademarks or imply endorsement.
+
+The character atlases (monster, bread, cat, dog and bear) were generated and
+edited for PetLink using an AI image-generation tool. They use a transparent
+4-by-2 grid: idle, two greeting poses and blink, with plain and scarf variants.
+
+The unmodified Yozai Regular v0.868 font is from:
+https://github.com/lxgw/yozai-font/releases/tag/v0.868
+SHA-256: 25071998a0fe6a72f54c235e714986d259633e5ff670b1a2b5e264387f3316ac
+Its copyright notices and SIL Open Font License are in
+client/Resources/OFL-Yozai.txt (OFL-Yozai.txt in the App's Resources directory).
+
+The server uses third-party Go libraries. Their license texts are reproduced
+in THIRD_PARTY_NOTICES. The DSH adapter uses an independently installed
+DeepSeek Harness runtime; that runtime is not distributed by PetLink.

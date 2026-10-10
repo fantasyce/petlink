@@ -1,0 +1,15 @@
+.build/
+dist/
+.local/
+.superpowers/
+*.db*
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+google-config.json
+client_secret*.json
+*.pem
+*.key

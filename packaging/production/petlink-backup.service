@@ -1,0 +1,14 @@
+[Unit]
+Description=Private verified PetLink SQLite backup
+ConditionPathExists=/var/lib/petlink-runtime/data/state.db
+ConditionPathExists=/var/lib/petlink-runtime/config/google-config.json
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/petlink-backup
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/backups/petlink
+ReadOnlyPaths=/var/lib/petlink-runtime/data /var/lib/petlink-runtime/config

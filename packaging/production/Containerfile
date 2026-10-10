@@ -1,0 +1,9 @@
+FROM scratch
+COPY petlink-server /petlink-server
+COPY ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY LICENSE NOTICE THIRD_PARTY_NOTICES /licenses/
+USER 10001:10001
+WORKDIR /data
+ENV GOMAXPROCS=1 GOMEMLIMIT=96MiB
+ENTRYPOINT ["/petlink-server"]
+CMD ["-listen","0.0.0.0:18746","-db","/data/state.db","-auth-mode","google","-google-config","/config/google-config.json","-trusted-proxy","10.0.2.0/24","-trusted-proxy","127.0.0.1/32"]

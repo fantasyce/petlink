@@ -1,0 +1,17 @@
+#!/bin/sh
+set -eu
+umask 077
+source=/var/lib/petlink-runtime/data/state.db
+root=/var/backups/petlink
+[ -s "$source" ] || exit 0
+install -d -m 0700 "$root"
+stage=$(mktemp -d "$root/.stage.XXXXXX")
+trap 'rm -f "$stage/state.db" "$stage/google-config.json"; rmdir "$stage" 2>/dev/null || true' EXIT
+sqlite3 "file:$source?mode=ro" ".backup '$stage/state.db'"
+[ "$(sqlite3 "$stage/state.db" 'PRAGMA integrity_check;')" = ok ]
+install -m 0600 /var/lib/petlink-runtime/config/google-config.json "$stage/google-config.json"
+final="$root/$(date -u +%Y%m%dT%H%M%SZ)"
+mv "$stage" "$final"
+# Only date-shaped snapshots owned by this backup job, never unrelated files.
+find "$root" -mindepth 2 -maxdepth 2 -type f -mtime +13 \( -name state.db -o -name google-config.json \) -path "$root/????????T??????Z/*" -delete
+find "$root" -mindepth 1 -maxdepth 1 -type d -empty -name '????????T??????Z' -delete

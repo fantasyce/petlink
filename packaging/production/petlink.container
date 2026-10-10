@@ -1,0 +1,31 @@
+[Unit]
+Description=PetLink rootless production backend
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=/var/lib/petlink-runtime/data/state.db
+ConditionPathExists=/var/lib/petlink-runtime/config/google-config.json
+
+[Container]
+Image=localhost/petlink:0.4.0
+ContainerName=petlink
+UserNS=keep-id
+User=10001:10001
+ReadOnly=true
+DropCapability=all
+NoNewPrivileges=true
+Network=slirp4netns:allow_host_loopback=false
+PublishPort=127.0.0.1:18746:18746
+Volume=/var/lib/petlink-runtime/data:/data:rw
+Volume=/var/lib/petlink-runtime/config:/config:ro
+PodmanArgs=--read-only-tmpfs=false --pids-limit=64 --memory=192m --memory-swap=192m --cpus=0.5 --ulimit=nofile=1024:1024 --log-driver=k8s-file --log-opt=max-size=8mb
+
+[Service]
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+UMask=0077
+ExecStartPre=/usr/bin/test -s /var/lib/petlink-runtime/data/state.db
+ExecStartPre=/usr/bin/test -s /var/lib/petlink-runtime/config/google-config.json
+
+[Install]
+WantedBy=default.target
