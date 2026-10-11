@@ -1,6 +1,6 @@
 # PetLink
 
-桌宠串门，好友相伴 / Pet visits. Friends connect.
+桌宠也能去串门 / Pet Visits
 
 ![两台 Mac 模拟串门：申请、好友接待、桌宠来访与召回 / Two-Mac visit simulation: request, accept, visit, and recall](.github/media/visits.gif)
 
