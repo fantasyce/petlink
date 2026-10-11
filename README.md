@@ -1,14 +1,33 @@
 # PetLink
 
-让桌宠陪你工作，也能去朋友的桌面串门。
+让桌面，多一点陪伴。 / A little company on your desktop.
 
-PetLink 是原生 macOS 社交桌宠应用，支持 Apple Silicon 和 Intel Mac，要求 macOS 13 或更高版本。当前版本为 0.4.0。
+![选择桌宠、装扮和挥手的原生界面演示 / Choose a pet, an outfit, and wave](.github/media/companion.gif)
 
-界面支持简体中文和 English。在“设置 → 语言”选择跟随系统或指定语言，立即生效并记住选择。系统不包含受支持的语言时使用 English。
+**[下载 0.4.0 / Download](https://github.com/fantasyce/petlink/releases/tag/v0.4.0)** · **[观看 29 秒演示 / Watch the demo](.github/media/petlink-demo.mp4)**
 
-The interface supports English and Simplified Chinese. In Settings → Language, choose Follow system or select a language; changes apply immediately and persist across launches. Other system languages fall back to English. Install by dragging PetLink.app to Applications. Requires macOS 13 or later; Apple Silicon and Intel packages are provided separately.
+macOS 13+ · Apple Silicon & Intel · 简体中文 / English
 
-## 功能与使用
+### 工作进度，抬眼就知道 / Keep an eye on your agents
+
+![自动识别活跃会话，气泡显示进度和完成状态 / Active sessions and progress bubbles](.github/media/sessions.gif)
+
+### 去朋友家串门，也聊聊他们的 Agent / Visit friends and ask their agents
+
+![申请串门、接待来访、从联系人进入聊天的界面演示 / Visits, contacts, and agent chat](.github/media/friends.gif)
+
+*演示账号与示例内容 / Demo accounts and sample content.*
+
+<details>
+<summary>安装与使用 / Installation & use</summary>
+
+将对应架构的 DMG 打开，把 `PetLink.app` 拖入 Applications，要求 macOS 13 或更高版本。当前安装包使用本地 ad-hoc 签名，尚未完成 Apple Developer ID 签名与公证。
+
+Open the DMG for your Mac and drag `PetLink.app` to Applications. macOS 13 or later is required. The current build is ad-hoc signed and has not been notarized by Apple.
+
+界面支持简体中文和 English，在“设置 → 语言”选择跟随系统或指定语言，立即生效并记住选择。不支持的系统语言使用 English。
+
+In Settings → Language, choose Follow system, 简体中文, or English. Changes apply immediately and persist across launches; unsupported system languages fall back to English.
 
 - 选择桌宠和装扮，拖动到喜欢的位置；重启后恢复外观与位置。
 - 通过 Google 登录，用好友 ID 添加联系人，申请串门、接待访客、挥手和召回。
@@ -25,7 +44,14 @@ The interface supports English and Simplified Chinese. In Settings → Language,
 
 默认服务地址为 `https://api.fantasyce.com:8443/petlink`。
 
-## 构建与测试
+展示素材使用真实原生界面与随 App 提供的角色图集。录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
+
+The demos use native UI and bundled character sprites, isolated demo accounts, and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
+
+</details>
+
+<details>
+<summary>构建与测试 / Build & test</summary>
 
 需要 macOS、Xcode Command Line Tools、Go 1.27.2 或更新版本，以及 Python 3。依赖固定在 `server/go.mod` 和 `server/go.sum`。
 
@@ -61,7 +87,10 @@ PETLINK_GOOGLE_SOAK_DURATION=60m go -C server test \
 
 源码构建使用本地 ad-hoc 签名。面向普通用户公开分发前，需另行完成 Developer ID 签名、Hardened Runtime、Apple 公证和全新 Mac 安装验证。当前仓库整理不代表已经完成公开发行。
 
-## 自托管
+</details>
+
+<details>
+<summary>自托管 / Self-hosting</summary>
 
 `server/` 是 Go 与 SQLite 后端；`packaging/production/` 提供 rootless Podman、Nginx、出口限制和备份模板。模板不是自动安装器，使用前须审核主机用户、端口、域名、证书和防火墙。
 
@@ -102,14 +131,19 @@ Cloudflare 代理模式使用 Full (strict)，限制源站 API 仅接收 Cloudfl
 python3 scripts/check-production-edge.py https://api.example.com:8443
 ```
 
-## 结构与贡献
+</details>
+
+<details>
+<summary>结构、贡献与许可 / Contributing & licensing</summary>
 
 `client/` 包含原生界面、桌宠、Agent 适配与 Swift 测试；`client/Resources/` 保存角色图集、字体及 DSH 运行器；`server/` 包含认证、社交、加密转发与 Go 测试；`scripts/` 用于构建验证；`packaging/` 保存 App 元数据和生产模板。
 
 欢迎提交缺陷复现与范围明确的改进。先运行相关测试，不要附带密钥、令牌、真实会话、账号数据或完整日志。聊天授权、好友权限和加密协议的改动，应覆盖拒绝、取消、撤销、断线及重放边界。
 
-## 许可
-
 PetLink 自有代码采用 [Apache License 2.0](LICENSE)。版权及素材说明见 [NOTICE](NOTICE)，Go 依赖声明见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES)。Yozai 字体保留其 [SIL Open Font License](client/Resources/OFL-Yozai.txt)，不改用 Apache 许可证。
 
 Apache-2.0 允许商业使用和闭源衍生版本，不要求公开修改后的源码；分发时仍须遵守许可、版权、修改说明及 NOTICE 的保留要求。若未来公开发布 Apache 版本，已授予接收者的许可不可收回，他人也可以依法制作商业衍生版本。仓库是否公开与软件许可证是两项独立决定。
+
+</details>
+
+[Apache-2.0](LICENSE) · [NOTICE](NOTICE) · [Third-party notices](THIRD_PARTY_NOTICES)
