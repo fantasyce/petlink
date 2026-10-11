@@ -135,7 +135,7 @@ PETLINK_GOOGLE_SOAK_DURATION=60m go -C server test \
   -run '^TestGoogleAcceptanceCapacity$' -count=1 -timeout=70m
 ```
 
-Source builds are ad-hoc signed. Public distribution to general users still requires Developer ID signing, Hardened Runtime, Apple notarization, and installation checks on a clean Mac. Repository preparation does not mean those distribution steps are complete.
+Source builds and the current open-source preview packages are ad-hoc signed. A formal release for general users still needs Developer ID signing, Hardened Runtime, Apple notarization, and installation checks on a clean Mac.
 
 </details>
 

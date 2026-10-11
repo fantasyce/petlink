@@ -138,7 +138,7 @@ PETLINK_GOOGLE_SOAK_DURATION=60m go -C server test \
   -run '^TestGoogleAcceptanceCapacity$' -count=1 -timeout=70m
 ```
 
-源码构建使用本地 ad-hoc 签名。面向普通用户公开分发前，需另行完成 Developer ID 签名、Hardened Runtime、Apple 公证和全新 Mac 安装验证。当前仓库整理不代表已经完成公开发行。
+源码构建和当前开源预览安装包使用本地 ad-hoc 签名。面向普通用户的正式发行仍需完成 Developer ID 签名、Hardened Runtime、Apple 公证和全新 Mac 安装验证。
 
 </details>
 
