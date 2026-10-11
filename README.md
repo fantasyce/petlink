@@ -33,6 +33,25 @@ When both friends enable agent chat, open it from Contacts and ask the visiting 
 ![自动识别活跃会话，气泡显示进度和完成状态 / Active sessions and progress bubbles](.github/media/sessions.gif)
 
 <details>
+<summary>更多桌宠互动 / More pet moments</summary>
+
+**给小伙伴换上新装 / Outfits and a little wave**
+
+![桌宠装扮与挥手的模拟动图 / Illustrated pet outfits and waving](.github/media/pet-outfits.gif)
+
+**任务完成它会提醒你 / A gentle reminder when work is done**
+
+![任务进度、完成跳跃与隐藏气泡的模拟动图 / Illustrated progress, completion bounce, and hidden bubbles](.github/media/pet-work-bubbles.gif)
+
+**来访小伙伴也能聊 / Chat with a visiting pet's agent**
+
+![两台 Mac 模拟提问、主人批准、加密回答与访客气泡 / Two-Mac illustration of agent chat and visitor bubbles](.github/media/pet-visitor-chat.gif)
+
+*流程模拟与示例消息 / Illustrated flows and sample messages.*
+
+</details>
+
+<details>
 <summary>安装与使用 / Installation & use</summary>
 
 将对应架构的 DMG 打开，把 `PetLink.app` 拖入 Applications，要求 macOS 13 或更高版本。当前安装包使用本地 ad-hoc 签名，尚未完成 Apple Developer ID 签名与公证。
@@ -58,9 +77,9 @@ In Settings → Language, choose Follow system, 简体中文, or English. Change
 
 默认服务地址为 `https://api.fantasyce.com:8443/petlink`。
 
-双电脑画面为串门流程模拟；其余展示采用真实原生界面与随 App 提供的角色图集。录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
+标注“流程模拟”的画面用于讲解功能，角色使用随 App 提供的图集。原生界面录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
 
-The two-computer sequence illustrates the visit flow; the other demos use native UI and bundled character sprites, isolated demo accounts, and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
+Sequences marked as illustrated flows explain the features using bundled character sprites. Native UI recordings use isolated demo accounts and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
 
 </details>
 
