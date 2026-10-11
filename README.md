@@ -12,7 +12,7 @@
 
 <p align="center"><strong>33 秒认识 PetLink</strong></p>
 
-https://github.com/user-attachments/assets/09d63b4d-acb3-437d-8e2d-4da313330e64
+https://github.com/user-attachments/assets/b7590d5f-6c01-4657-a035-863af6caecb4
 
 <br>
 
