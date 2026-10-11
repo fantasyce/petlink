@@ -12,7 +12,7 @@
 
 <p align="center"><strong>Meet PetLink in 33 seconds</strong></p>
 
-https://github.com/user-attachments/assets/bfb346db-52d9-4178-82d9-8722a459d56c
+https://github.com/user-attachments/assets/79f87f55-af28-42a5-b52b-2194516cca1c
 
 <br>
 
