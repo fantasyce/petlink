@@ -1,73 +1,94 @@
-# PetLink
+<p align="center"><strong>简体中文</strong> &nbsp; · &nbsp; <a href="README.en.md">English</a></p>
 
-桌宠也能去串门 / Pet Visits
+<p align="center">
+  <img src=".github/media/hero-zh.gif" width="820" alt="PetLink 桌宠也能去串门">
+</p>
 
-![两台 Mac 模拟串门：申请、好友接待、桌宠来访与召回 / Two-Mac visit simulation: request, accept, visit, and recall](.github/media/visits.gif)
+<p align="center">
+  <a href="https://github.com/fantasyce/petlink/releases/tag/v0.4.0"><strong>下载 macOS 版</strong></a>
+  &nbsp; · &nbsp; <a href=".github/media/petlink-demo.mp4">观看 33 秒演示</a>
+</p>
 
-**[下载 0.4.0 / Download](https://github.com/fantasyce/petlink/releases/tag/v0.4.0)** · **[观看 33 秒演示 / Watch the demo](.github/media/petlink-demo.mp4)**
+<p align="center"><sub>v0.4.0 · macOS 13 及以上 · Apple 芯片与 Intel 芯片 · 支持中文与英文</sub></p>
 
-macOS 13+ · Apple Silicon & Intel · 简体中文 / English
+<br>
 
-### 让桌宠去朋友家串门 / Send your pet to a friend's desktop
+<h2 align="center">小伙伴去朋友家坐坐</h2>
 
-**申请串门 → 好友接待 → 同桌相伴**
+<p align="center">发起串门，等好友接待。你的桌宠离开自己的桌面，出现在朋友的电脑上。</p>
 
-好友接待后，你的桌宠会离开自己的桌面，出现在好友的电脑上，和对方的桌宠一起作伴。你可以随时召回，好友也可以送客。串门本身无需数字分身或钥匙串授权。
+![双电脑模拟串门申请、接待、来访与召回](.github/media/visits.gif)
 
-Request a visit, let your friend welcome it, and your pet appears on their Mac. Recall it whenever you like; your friend can also send it home. Visits do not require agent chat or Keychain authorization.
+<p align="center"><sub>你可以随时召回，好友也可以送客。普通串门无需数字分身或钥匙串授权。</sub></p>
 
-双方开启数字分身后，还能从联系人条目进入聊天，向来访桌宠的 Agent 提问；由桌宠主人批准后回答。
+<br>
 
-When both friends enable agent chat, open it from Contacts and ask the visiting pet's agent a question. Its owner approves requests before it answers.
+<h2 align="center">在自己的桌面也有好陪伴</h2>
 
-![申请串门、接待来访、从联系人进入聊天的界面演示 / Visits, contacts, and agent chat](.github/media/friends.gif)
+<table>
+  <tr>
+    <td width="50%" valign="top" align="center">
+      <h3>给日常一点新装扮</h3>
+      <a href=".github/media/pet-outfits.gif"><img src=".github/media/pet-outfits.gif" width="440" alt="模拟选择桌宠、穿围巾与挥手"></a>
+      <p>选一只喜欢的小伙伴，换个装扮，和它挥挥手。</p>
+    </td>
+    <td width="50%" valign="top" align="center">
+      <h3>工作完成轻轻提醒</h3>
+      <a href=".github/media/pet-work-bubbles.gif"><img src=".github/media/pet-work-bubbles.gif" width="440" alt="模拟会话进度、完成跳跃与隐藏气泡"></a>
+      <p>自动追踪会话，用气泡看进度。只想养桌宠时，也能隐藏气泡。</p>
+    </td>
+  </tr>
+</table>
 
-*演示账号与示例内容 / Demo accounts and sample content.*
+<br>
 
-### 选一只小伙伴，换上喜欢的装扮 / Pick a companion and an outfit
+<h2 align="center">来访之后聊点什么</h2>
 
-![选择桌宠、装扮和挥手的原生界面演示 / Choose a pet, an outfit, and wave](.github/media/companion.gif)
+<p align="center">从联系人进入聊天，向来访桌宠的 Agent 提问。主人同意后，回答加密送回。</p>
 
-### 工作进度，抬眼就知道 / Keep an eye on your agents
+![双电脑模拟提问、批准、加密回答与访客气泡](.github/media/pet-visitor-chat.gif)
 
-![自动识别活跃会话，气泡显示进度和完成状态 / Active sessions and progress bubbles](.github/media/sessions.gif)
+<p align="center"><sub>双方主动授权后开启。支持允许一次，也支持可撤销的长期授权。</sub></p>
 
 <details>
-<summary>更多桌宠互动 / More pet moments</summary>
+<summary><strong>展开看看 App 的界面演示</strong></summary>
 
-**给小伙伴换上新装 / Outfits and a little wave**
+### 选小伙伴与装扮
 
-![桌宠装扮与挥手的模拟动图 / Illustrated pet outfits and waving](.github/media/pet-outfits.gif)
+![桌宠选择与装扮的界面演示](.github/media/companion.gif)
 
-**任务完成它会提醒你 / A gentle reminder when work is done**
+### 跟上 Agent 的工作进度
 
-![任务进度、完成跳跃与隐藏气泡的模拟动图 / Illustrated progress, completion bounce, and hidden bubbles](.github/media/pet-work-bubbles.gif)
+![自动追踪会话与进度气泡的界面演示](.github/media/sessions.gif)
 
-**来访小伙伴也能聊 / Chat with a visiting pet's agent**
+### 接待好友与加密问答
 
-![两台 Mac 模拟提问、主人批准、加密回答与访客气泡 / Two-Mac illustration of agent chat and visitor bubbles](.github/media/pet-visitor-chat.gif)
+![串门、来访接待与联系人聊天的界面演示](.github/media/friends.gif)
 
-*流程模拟与示例消息 / Illustrated flows and sample messages.*
+动图使用随 App 提供的角色图集。界面录制采用隔离演示账号、合成任务与示例消息；聊天文字不是录制时实时生成的模型回答。英文版界面演示为本地化合成预览。展示素材不包含真实账号的钥匙串信息或对话历史。
 
 </details>
 
+<br>
+
+## 从一只桌宠开始
+
+打开 App 就能先养本地桌宠。想去朋友家串门时，再通过 Google 登录，用好友 ID 添加彼此。数字分身聊天可按需开启。
+
 <details>
-<summary>安装与使用 / Installation & use</summary>
+<summary><strong>安装与使用</strong></summary>
 
-将对应架构的 DMG 打开，把 `PetLink.app` 拖入 Applications，要求 macOS 13 或更高版本。当前安装包使用本地 ad-hoc 签名，尚未完成 Apple Developer ID 签名与公证。
+- [下载 Apple 芯片版](https://github.com/fantasyce/petlink/releases/download/v0.4.0/PetLink-0.4.0-arm64.dmg)
+- [下载 Intel 芯片版](https://github.com/fantasyce/petlink/releases/download/v0.4.0/PetLink-0.4.0-x86_64.dmg)
 
-Open the DMG for your Mac and drag `PetLink.app` to Applications. macOS 13 or later is required. The current build is ad-hoc signed and has not been notarized by Apple.
+打开对应架构的 DMG，把 `PetLink.app` 拖入“应用程序”，即可先使用本地桌宠。要求 macOS 13 或更高版本。当前安装包使用本地 ad-hoc 签名，尚未完成 Apple Developer ID 签名与公证。
 
-界面支持简体中文和 English，在“设置 → 语言”选择跟随系统或指定语言，立即生效并记住选择。不支持的系统语言使用 English。
-
-In Settings → Language, choose Follow system, 简体中文, or English. Changes apply immediately and persist across launches; unsupported system languages fall back to English.
+界面支持简体中文和英文，在“设置 → 语言”选择跟随系统或指定语言，立即生效并记住选择。不支持的系统语言使用英文。
 
 - 选择桌宠和装扮，拖动到喜欢的位置；重启后恢复外观与位置。
-- 通过 Google 登录，用好友 ID 添加联系人，申请串门、接待访客、挥手和召回。
+- 通过 Google 登录，在设置中找到好友 ID，添加联系人、申请串门和接待访客。外出时主页会显示“召回”。
 - 自动识别 Codex、Claude Code、Claude Cowork 和 DeepSeek Harness 桌面版的活跃会话，用气泡显示进度；可以关闭追踪或隐藏气泡，无需安装 Hook。
-- 在联系人列表中向已来访且开启数字分身的好友提问，由对方本机的 Claude Code、Codex 或 DeepSeek Harness 回答并加密回传。对方可允许一次，也可给予可撤销的长期授权。
-
-将对应架构的 `PetLink.app` 放进“应用程序”并打开，可以先使用本地桌宠。登录后，在设置中找到自己的好友 ID，通过联系人页面添加朋友和申请串门；外出时主页会显示“召回”。如需聊天，在联系人页面完成数字分身授权，好友来访且具备聊天能力后点击聊天图标。
+- 在联系人页面完成数字分身授权。好友来访且具备聊天能力后，点击聊天图标提问，由对方本机的 Claude Code、Codex 或 DeepSeek Harness 回答并加密回传。对方可允许一次，也可给予可撤销的长期授权。
 
 普通桌宠、登录和串门不需要开启数字分身。数字分身需要双方授权：长期私钥保存在各自 Mac 的钥匙串，服务器只登记公钥并转发加密问答。macOS 可能要求确认钥匙串访问，不要向任何人提供电脑密码。
 
@@ -77,14 +98,10 @@ In Settings → Language, choose Follow system, 简体中文, or English. Change
 
 默认服务地址为 `https://api.fantasyce.com:8443/petlink`。
 
-标注“流程模拟”的画面用于讲解功能，角色使用随 App 提供的图集。原生界面录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
-
-Sequences marked as illustrated flows explain the features using bundled character sprites. Native UI recordings use isolated demo accounts and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
-
 </details>
 
 <details>
-<summary>构建与测试 / Build & test</summary>
+<summary><strong>构建与测试</strong></summary>
 
 需要 macOS、Xcode Command Line Tools、Go 1.27.2 或更新版本，以及 Python 3。依赖固定在 `server/go.mod` 和 `server/go.sum`。
 
@@ -123,7 +140,7 @@ PETLINK_GOOGLE_SOAK_DURATION=60m go -C server test \
 </details>
 
 <details>
-<summary>自托管 / Self-hosting</summary>
+<summary><strong>自托管</strong></summary>
 
 `server/` 是 Go 与 SQLite 后端；`packaging/production/` 提供 rootless Podman、Nginx、出口限制和备份模板。模板不是自动安装器，使用前须审核主机用户、端口、域名、证书和防火墙。
 
@@ -167,7 +184,7 @@ python3 scripts/check-production-edge.py https://api.example.com:8443
 </details>
 
 <details>
-<summary>结构、贡献与许可 / Contributing & licensing</summary>
+<summary><strong>结构、贡献与许可</strong></summary>
 
 `client/` 包含原生界面、桌宠、Agent 适配与 Swift 测试；`client/Resources/` 保存角色图集、字体及 DSH 运行器；`server/` 包含认证、社交、加密转发与 Go 测试；`scripts/` 用于构建验证；`packaging/` 保存 App 元数据和生产模板。
 
@@ -179,4 +196,4 @@ Apache-2.0 允许商业使用和闭源衍生版本，不要求公开修改后的
 
 </details>
 
-[Apache-2.0](LICENSE) · [NOTICE](NOTICE) · [Third-party notices](THIRD_PARTY_NOTICES)
+<p align="center"><a href="LICENSE">Apache-2.0</a> &nbsp; · &nbsp; <a href="NOTICE">版权与素材说明</a> &nbsp; · &nbsp; <a href="THIRD_PARTY_NOTICES">第三方声明</a></p>
