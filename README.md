@@ -1,22 +1,36 @@
 # PetLink
 
-让桌面，多一点陪伴。 / A little company on your desktop.
+桌宠串门，好友相伴 / Pet visits. Friends connect.
 
-![选择桌宠、装扮和挥手的原生界面演示 / Choose a pet, an outfit, and wave](.github/media/companion.gif)
+![两台 Mac 模拟串门：申请、好友接待、桌宠来访与召回 / Two-Mac visit simulation: request, accept, visit, and recall](.github/media/visits.gif)
 
-**[下载 0.4.0 / Download](https://github.com/fantasyce/petlink/releases/tag/v0.4.0)** · **[观看 29 秒演示 / Watch the demo](.github/media/petlink-demo.mp4)**
+**[下载 0.4.0 / Download](https://github.com/fantasyce/petlink/releases/tag/v0.4.0)** · **[观看 33 秒演示 / Watch the demo](.github/media/petlink-demo.mp4)**
 
 macOS 13+ · Apple Silicon & Intel · 简体中文 / English
 
-### 工作进度，抬眼就知道 / Keep an eye on your agents
+### 让桌宠去朋友家串门 / Send your pet to a friend's desktop
 
-![自动识别活跃会话，气泡显示进度和完成状态 / Active sessions and progress bubbles](.github/media/sessions.gif)
+**申请串门 → 好友接待 → 同桌相伴**
 
-### 去朋友家串门，也聊聊他们的 Agent / Visit friends and ask their agents
+好友接待后，你的桌宠会离开自己的桌面，出现在好友的电脑上，和对方的桌宠一起作伴。你可以随时召回，好友也可以送客。串门本身无需数字分身或钥匙串授权。
+
+Request a visit, let your friend welcome it, and your pet appears on their Mac. Recall it whenever you like; your friend can also send it home. Visits do not require agent chat or Keychain authorization.
+
+双方开启数字分身后，还能从联系人条目进入聊天，向来访桌宠的 Agent 提问；由桌宠主人批准后回答。
+
+When both friends enable agent chat, open it from Contacts and ask the visiting pet's agent a question. Its owner approves requests before it answers.
 
 ![申请串门、接待来访、从联系人进入聊天的界面演示 / Visits, contacts, and agent chat](.github/media/friends.gif)
 
 *演示账号与示例内容 / Demo accounts and sample content.*
+
+### 选一只小伙伴，换上喜欢的装扮 / Pick a companion and an outfit
+
+![选择桌宠、装扮和挥手的原生界面演示 / Choose a pet, an outfit, and wave](.github/media/companion.gif)
+
+### 工作进度，抬眼就知道 / Keep an eye on your agents
+
+![自动识别活跃会话，气泡显示进度和完成状态 / Active sessions and progress bubbles](.github/media/sessions.gif)
 
 <details>
 <summary>安装与使用 / Installation & use</summary>
@@ -44,9 +58,9 @@ In Settings → Language, choose Follow system, 简体中文, or English. Change
 
 默认服务地址为 `https://api.fantasyce.com:8443/petlink`。
 
-展示素材使用真实原生界面与随 App 提供的角色图集。录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
+双电脑画面为串门流程模拟；其余展示采用真实原生界面与随 App 提供的角色图集。录制采用隔离演示账号和合成任务；聊天文字是用于界面演示的示例内容，不是录制时实时生成的模型回答。展示素材不包含真实账号的钥匙串信息或对话历史。
 
-The demos use native UI and bundled character sprites, isolated demo accounts, and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
+The two-computer sequence illustrates the visit flow; the other demos use native UI and bundled character sprites, isolated demo accounts, and synthetic tasks. Chat text is illustrative sample content, not a live model response. No real account Keychain secrets or conversation history are included in these media.
 
 </details>
 
