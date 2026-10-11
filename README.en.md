@@ -6,10 +6,13 @@
 
 <p align="center">
   <a href="https://github.com/fantasyce/petlink/releases/tag/v0.4.0"><strong>Download for macOS</strong></a>
-  &nbsp; · &nbsp; <a href=".github/media/petlink-demo.mp4">Watch the 33-second demo</a>
 </p>
 
 <p align="center"><sub>v0.4.0 · macOS 13+ · Apple silicon &amp; Intel · English &amp; Simplified Chinese</sub></p>
+
+<p align="center"><strong>Meet PetLink in 33 seconds</strong></p>
+
+https://github.com/user-attachments/assets/bfb346db-52d9-4178-82d9-8722a459d56c
 
 <br>
 

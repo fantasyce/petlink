@@ -6,10 +6,13 @@
 
 <p align="center">
   <a href="https://github.com/fantasyce/petlink/releases/tag/v0.4.0"><strong>下载 macOS 版</strong></a>
-  &nbsp; · &nbsp; <a href=".github/media/petlink-demo.mp4">观看 33 秒演示</a>
 </p>
 
 <p align="center"><sub>v0.4.0 · macOS 13 及以上 · Apple 芯片与 Intel 芯片 · 支持中文与英文</sub></p>
+
+<p align="center"><strong>33 秒认识 PetLink</strong></p>
+
+https://github.com/user-attachments/assets/a7822bcc-e133-4149-9a6f-d58a1af2e48a
 
 <br>
 
